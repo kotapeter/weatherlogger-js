@@ -26,8 +26,8 @@
     "getWeather": "ts-node bin/getWeather.ts",
     "logWeather": "ts-node bin/logWeather.ts",
     "listWeather": "ts-node bin/listWeather.ts",
-    "weatherLogger": "ts-node crons/weatherLogger.ts",
-    "postinstall": "ts-node bin/setup.ts",
+    "weatherLogger": "npm run setup && ts-node crons/weatherLogger.ts",
+    "setup": "ts-node bin/setup.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Pataki",
