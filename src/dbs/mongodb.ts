@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb'
 
 const connection = async () => {
-    const client = new MongoClient(`mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}`)
+    const client = new MongoClient(`mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}`)
     await client.connect()
     return client.db(process.env.DB_NAME)
 }
