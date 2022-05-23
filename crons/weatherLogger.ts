@@ -3,7 +3,7 @@ import { CronJob } from 'cron'
 import getWeatherData from '../src/getWeatherData'
 import db from '../src/db'
 
-var job = new CronJob('* * * * *', async () => {
+var job = new CronJob(`*/3 * * * *`, async () => {
   const weatherData = await getWeatherData()
   await db.insertWeatherData(weatherData)
 
