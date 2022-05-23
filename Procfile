@@ -1,2 +1,2 @@
 web: npm start
-worker: npm run weatherLogger
+worker: npm run setup && npm run weatherLogger
