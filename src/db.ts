@@ -11,8 +11,8 @@ const dbFunctions = {
         await db.connection.schema.createTable(dbTableName, (table) => {
           table.increments('id').primary();
           table.string('time', 22);
-          table.float('temp', 2);
-          table.float('wind', 2);
+          table.float('temp', 2, 6);
+          table.float('wind', 2, 6);
         });
       }
     }
