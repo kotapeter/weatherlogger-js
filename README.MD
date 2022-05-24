@@ -14,7 +14,7 @@ To be able to test multiple databases on Kinsta you can use environment variable
 The app will require an API key from [OpenWeatherMap](https://home.openweathermap.org). If you sign up you can grab an API key for free that should allow you to make 1,000 API calls a day. Once logged in you should be able to [create a key](https://home.openweathermap.org/api_keys) which you'll need to use in an environment variable (see below).  
 
 ## Environment Variables
-The following enrionemnt variables need to be set for the application to function, see local and Kinsta setup for information on how to feed these variables to your application in a local or remote environment. 
+The following environment variables need to be set for the application to function, see local and Kinsta setup for information on how to feed these variables to your application in a local or remote environment. 
 
 * `OPENWEATHER_KEY`: The API key you generated for OpenWeatherMap services
 * `WEATHER_LOCATION`: A location to get weather for, for example: `paris`, `tokyo`
